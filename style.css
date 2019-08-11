@@ -43,7 +43,7 @@ body {
 }
 
 .panel {
-    overflow: hidden;
+    overflow: auto;
     background-color: rgb(68, 68, 68, 0.1);
     margin: 10px;
     border-bottom: 3px solid #aaa;
