@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolar dados War</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addSlot(attackSlots); addSlot(defenseSlots)">
+    <div class="container">
+
+        <div class="panel" id="attackPanel">
+            <span class="label">ATAQUE</span>
+            
+            <div class="slots" id="attackSlots"></div>
+
+            <div class="buttonLeft">
+                <input type="button" value="-" class="button" onclick="removeSlot(attackSlots)">
+            </div>
+            <div class="buttonRight">
+                <input type="button" value="+" class="button" onclick="addSlot(attackSlots)">
+            </div>
+        </div>
+
+        <div class="panel" id="defensePanel">
+            <span class="label">DEFESA</span>
+
+            <div class="slots" id="defenseSlots"></div>
+        
+            <div class="buttonLeft">
+                <input type="button" value="-" class="button" onclick="removeSlot(defenseSlots)">
+            </div>
+            <div class="buttonRight">
+                <input type="button" value="+" class="button" onclick="addSlot(defenseSlots)">
+            </div>
+        </div>
+
+        <div class="roll">
+            <input type="image" src="dice_button_input.png" class="rollButton" onclick="rollDices()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
